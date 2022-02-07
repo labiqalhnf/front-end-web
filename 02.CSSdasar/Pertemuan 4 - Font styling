@@ -1,0 +1,16 @@
+Pertemuan 4 - Font styling
+
+- font-family: mengatur jenis font 
+	value: nama font, generic family
+	cth: 
+	body {
+		font-family: arial, verdana, sans-family;
+	} *"arial" dan "verdana" nama font sedangkan "sans-family" adalah generic family
+	p {
+		font-family: "Times New Roman", serif;
+	}
+- font-size: mengatur ukuran font
+- font-weight: mengatur ketebalan font
+- font-variant mengubah font menjadi small caps
+- font-style: mengubah font menjadi bercetak miring
+- line-height: mengatur spasi antar baris

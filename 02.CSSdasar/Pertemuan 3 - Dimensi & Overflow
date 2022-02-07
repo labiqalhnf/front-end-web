@@ -1,0 +1,19 @@
+Pertemuan 3 - Dimensi & Overflow
+
+Satuan Dimensi = Width & Height
+satuannya: px, %, in, cm, mm, pt, pc/paica
+cth:
+<style>
+	width: ;
+	height: ;
+</style>
+
+Overflow = properti CSS untuk mengatur elemen yang keluar dari parentnya
+- value defaultnya visible: kalau ada konten yg keluar dari parentnya maka akan di perlihatkan
+- auto = secara otomatis akan menambahkan scroll ketika konten sudah tidak cukup/melebihi parentnya
+- hidden = konten yg keluar dari parent akan disembunyikan / terpotong
+- scroll = akan memunculkan scroll
+
+<style>
+	overflow: auto;
+</style>

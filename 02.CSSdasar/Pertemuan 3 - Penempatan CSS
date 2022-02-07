@@ -1,0 +1,9 @@
+Pertemuan 3 - Penempatan CSS
+- Bisa di simpan di halaman yang sama
+	embed:
+	<style></style>
+	inline:
+	<p style="color: lightblue;">...<p>
+- atau buat file terpisah dengan ekstensi css
+	external:
+	<link rel="stylesheet" href="style.css">

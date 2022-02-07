@@ -1,0 +1,13 @@
+Pertemuan 6 - Background CSS
+
+Properti background:
+- background-color: mengatur warna pada background
+	background-color: lightblue;
+- background-image: mengatur gambar yang akan digunakan pada background
+	background-image: url(gambar/bg1); bisa download dari subtlepattern.com
+- background-position: mengatur posisi gambar background
+	background-position: top/center/bottom, left/center/right
+- background-repeat: mengatur jenis pengulangan gambar pada background terhadap sumbu x/y
+	background-repeat: repeat-x; /-y /no-repeat
+
+*Bisa menggunakan Shorthand

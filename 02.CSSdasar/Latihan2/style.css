@@ -1,0 +1,14 @@
+h1 {
+	font-family: arial, verdana, sans-serif;
+	font-size: 100px;
+	font-weight: normal;
+	font-variant: small-caps;
+	font-style: italic;
+} /*pertama akan mencari apakah ada font arial dan kemudian seterusnya*/
+
+p {
+	font-family: georgia, serif;
+	linne-height: 50px;
+}/* px, %, em */
+
+/*Shorthand CSS?*/

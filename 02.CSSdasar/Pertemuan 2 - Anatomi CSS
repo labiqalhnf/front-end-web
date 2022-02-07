@@ -1,0 +1,20 @@
+Pertemuan 2 - Anatomi CSS
+
+Struktur/anatomi CSS:
+	selector {property: value;}
+contoh penggunaan :
+	h1 {color: blue;}
+dibaca:
+	"CSS plih seluruh elemen h1, lalu ubah teks didalamnya menjadi berwarna biru"
+
+h1 {
+	font-family:"";
+}
+
+selector: Digunakan untuk memilih dan memanipulasi elemen spesifik pada HTML.
+		  - Elemen HTML dipilih bersasarkan tag, id, class bahkan pola atau pattern.
+		  - Semakin kompleks struktur HTML, selector juga bisa semakin kompleks/spesifik.
+
+*Property dan value ada banyak jadi kalian bisa kunjungi website ini:
+	- developer.mozilla.org/en-US/docs/Web/CSS/Reference
+	- css-tricks.com/almanac

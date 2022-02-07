@@ -1,0 +1,53 @@
+<!-- Pertemuan 11 - Form HTML 
+Form = sebuah elemen pada html yg digunakan untuk mengelola data dari input yg dilakukan user
+baik mengisi data pada kolom, memilih combobox/dropdown menu, radio sampai dengan tombol
+
+cth: form login, form regis dsb
+*textfield, combobox/dropdown/list box, radio button, checkbox
+elemen form:
+input, textarea, select (dropdwon), button (submit, reset, button), label
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pertemuan 11 - Form HTML</title>
+</head>
+<body>
+<form>
+	<table border="1" cellspacing="0" cellpadding="5">
+		<tr>
+			<td><label for="Username">Username : </label></td>
+			<td><input type="text" id="Username"></td>
+		</tr>
+		<tr>
+			<td><label for="Password">Password : </label></td>
+			<td><input type="password" id="Password"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="radio" id="Pria" name="jeniskelamin"><label for="Pria">Pria</label>
+			<input type="radio" id="Wanita" name="jeniskelamin"><label for="Wanita">Wanita</label></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="checkbox" id="Menyanyi"><label for="Menyanyi">Menyanyi</label>
+			<input type="checkbox" id="Olahraga"><label for="Olahraga">Olahraga</label>
+			<input type="checkbox" id="Ngoding"><label for="Ngoding">Ngoding</label></td>
+		</tr>
+		<textarea></textarea>
+			<br>
+		<select>
+			<option>Sumatera</option>
+			<option>Kalimantan</option>
+			<option>Jawa</option>
+			<option>Sulawesi</option>
+			<br>
+		</select>
+		<tr>
+			<td colspan="2"><input type="submit" value="kirim!"> <!-- tdk disarankn -->
+			<button type="submit">kirim!</button> <!-- lebih disarankn --></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

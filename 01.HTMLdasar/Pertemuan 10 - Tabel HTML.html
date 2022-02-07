@@ -1,0 +1,94 @@
+<!-- Pertemuan 10 - Tabel html 
+Digunakan untuk menampilkan data tabular jangan digunakan untuk layout halaman.
+Kotak horizontal = baris <tr> table row
+Kotak vertikal = kolom <td> table data
+perpotongannya = 1 cell / data
+Judul tiap kolom = header - horizontal/vertikal
+Ada tabel yg simple dan komplex
+
+Atribu dalam table
+border, cellspasing/jarak antar cell, cellpadding/luas cell (CSS!)
+Colspan, rowspan = menggabungkan merging cell col/row
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pertemuan 10 - Tabel HTML</title>
+</head>
+<body>
+<table border="1" cellspacing="0" cellpadding="5">
+	<tr>
+		<td>Baris 1, Kolom 1</td>
+		<td>Baris 1, Kolom 2</td>
+	</tr>
+	<tr>
+		<td>Baris 2, Kolom 1</td>
+		<td>Baris 2, Kolom 2</td>
+	</tr> <!-- Simple table -->
+</table>
+<hr>
+<table border="1" cellspacing="0" cellpadding="3">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Kolom 1</th>
+			<th>Kolom 2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Baris 1</th>
+			<td>Baris 1, Kolom 1</td>
+			<td>Baris 1, Kolom 2</td>
+		</tr>
+		<tr>
+			<th>Baris 2</th>
+			<td>Baris 2, Kolom 1</td>
+			<td>Baris 2, Kolom 2</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<table border="1" cellspacing="0" cellpadding="5">
+	<tr>
+		<td rowspan="3">1,1 2,1 3,1</td>
+		<td colspan="2">1,2 dan 1,3</td>
+	</tr>
+	<tr>
+		<td>2,2</td>
+		<td>2,3</td>
+	</tr>
+	<tr>
+		<td>3,2</td>
+		<td>3,3</td>
+	</tr>
+</table>
+<hr>
+<table border="1" cellspacing="0" cellpadding="5">
+	<tr>
+		<td>1,1</td>
+		<td>1,2</td>
+		<td>1,3</td>
+		<td>1,4</td>
+	</tr>
+	<tr>
+		<td>2,1</td>
+		<td rowspan="2" colspan="2" >?</td>
+		<td>2,4</td>
+	</tr>
+	<tr>
+		<td>3,1</td>
+		<td>3,1</td>
+	</tr>
+	<tr>
+		<td>4,1</td>
+		<td>4,2</td>
+		<td>4,3</td>
+		<td>4,4</td>
+	</tr>
+</table>
+</body>
+</html>

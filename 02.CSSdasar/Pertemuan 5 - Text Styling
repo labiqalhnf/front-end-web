@@ -1,0 +1,20 @@
+Pertemuan 5 - Text Styling
+*coba ngoding di codepen.io
+
+Properti Text:
+- color: memberi warna pada tulisan
+	nama warna: red, lightsgreen, royalblue, ...
+	hexadecimal: #ff0000, #20b2aa, #4169e1, ... cek di www.colorpicker.com
+	rgb: rgb(255,0,0), rgb(32,178,170), rgb(65,105,255), ...
+- text-align: mengatur format paragraf / teks
+	left, right, center, justify
+- text-indent: memberi identitas pada paragraf / teks
+	px, %
+- text-decoration: mengatur dekorasi pada teks
+	none, underline, overline, line-through
+- text-transform: mengubah jenis huruf menjadi huruf besar, kecil / kapital
+	none, lowercase, uppercase, capitalize
+- letter-spacing: mengatur spasi antar huruf
+	normal, px
+- word-spasing: mengatur spasi antar kata
+	normal, px

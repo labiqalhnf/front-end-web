@@ -1,0 +1,14 @@
+Pertemuan 9 - Inheritance (Pewarisan)
+di CSS konsepnya beda dari bhs pemrograman lain seperti php/java
+
+"sebuah elemen mewarisi beberapa nilai dari properti yg dimiliki oleh parent-nya"
+properti yang diwariskan:
+color, font, letter-spacing, line-height, list-style, white-space
+text elign, text-indent, text-transform, visibility
+
+kasus berbeda pada elemen a (atau tetap defaultnya)
+*elemen <a> tidak mewarisi nilai dari properti color
+	cara mengatasi
+	a {
+		color: inherit;
+	} a akan mewarisi properti apapun yg diwarisi parent-nyya

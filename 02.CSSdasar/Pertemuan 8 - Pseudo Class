@@ -1,0 +1,69 @@
+Pertemuan 8 - Pseudo Class
+"kelas semu yg dimiliki oleh sebuah elemen HTML, yang membuat kita dapat mendefinisikan style pada "keadaan tertentu" dari elemen tersebut"
+
+Tipe Pseudo-class:
+- yg berhubungan dengan link
+	:link = style default pada sebuah link (a yg memiliki href)
+	:hover = style ketika kursor mouse berada diatas sebuah link/elemen
+	:active = style ketika sebuah link di-klik (keadaan aktif)
+	:vivited = style ketika sebuah link sudah pernah dikunjungi sebelumnya (menggunakan browser yg sama)
+
+cth:
+.class:link {
+	color:orange;
+}
+
+.class:hover {
+	font-family: arial;;
+	font-size: 20px;
+	color: green;
+}
+
+.class:active {
+	font-style: italic;
+}
+
+.class:visited {
+	color: red;
+}
+
+- yg berhubungan dengan posisi elemen
+	:first-child = memilih elemen pertama dari sebuah parent (elemen pembungkusnya)
+	:last-child = memilih elemen terakhir dari sebuah parent (elemen pembungkusnya)
+	:nth-child = memilih elemen ke-n dari sebuah parent (elemen pembungkusnya).
+	n bisa berarti urutan (1),(2),... atau pola (2n),(3n+2),(4n+1) atau ganjil dan genap (even) & (odd)
+
+cth:
+<ul>
+	<li><a href="">Link 1</a></li>
+	<li><a href="">Link 1</a></li>
+	<li><a href="">Link 1</a></li>
+</ul>
+
+konsep parent-child = - ul (parent) memiliki 3 anak/child (li)
+					  - li (parent) memiliki 1 anak/child (a)
+
+li:first-child a {
+	color: green;
+} CSS carikan saya a yg ada didalam li yang merupakan anak pertama
+
+
+li:nth-child(3) a {
+	color: red;
+} atau kelipatan 2/3 = (2n/3n)
+
+li:nth-child(even/odd) a {
+	color: red;
+}
+
+li:nth-child(odd) a:hover {
+	color: red;
+}
+
+	:first-of-type = memilih elemen pertama dari sebuah jenis/tipe tag
+	:last-of-type = memilih elemen terakhir dari sebuah jenis/tipe tag
+
+cth:
+p:last-of-type {
+	color: red;
+}

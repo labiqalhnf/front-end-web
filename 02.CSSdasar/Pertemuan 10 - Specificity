@@ -1,0 +1,85 @@
+Pertemuan 10 - Specificity
+"setiap deklarasi CSS (selector) memiliki berat yang berbeda. berat trsebut menentukan seberapa spesifik sebuah elemen dapat dipilih oleh selector"
+
+berat menentukan seberapa spesifik elemen tersebut
+
+cth 1:
+p {
+	color: red;
+}
+p {
+	color: green;
+} warna merah akan tertimpa oleh warna green (selector trakhir)
+
+cth 2:
+<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+#p1 {
+	color: red;
+}
+
+p {
+	color: green;
+} id #p1 lebih spesifik dari p
+
+*Menghitung nilai spesifik
+   0     0    0       0
+inline, id, class, element
+
+jika ada element tambah 1 begitu juga dengan yg lainnya
+
+#p1 = 0 1 0 0
+p   = 0 0 0 1
+
+(#p1 lebih spesifik/berat nilainya)
+
+cth 3:
+<ul id="sarapan">
+	<li class="favorit">Nasi Goreng</li>
+	<li>Mie Goreng</li>
+	<li>Bubur Ayam</li>
+	<li>Nasi Kuning</li>
+</ul>
+
+ul#sarapan li {
+	color: green;
+}
+
+.favorit {
+	color: red;
+} nasi goreng hasilnya hijau
+
+hitung:
+ul#sarapan li = 0 1 0 2
+.favorit	  = 0 0 1 0
+
+*Solusi:
+- buat elemen yg diinginkan agar menjadi lebih spesifik
+- tambahkan beban pada elemen tersebut agar semakin berat
+
+<ul id="sarapan">
+	<li class="favorit">Nasi Goreng</li>
+	<li>Mie Goreng</li>
+	<li>Bubur Ayam</li>
+	<li>Nasi Kuning</li>
+</ul>
+
+ul#sarapan li {
+	color: green;
+}
+
+ul.#sarapan li.favorit{
+	color: red;
+} nasi goreng hasilnya merah
+"carikan li yg punya class favorit, didalam ul yg punya id sarapan"
+
+hitung:
+ul#sarapan li = 0 1 0 2
+ul#sarapan li.favorit = 0 1 1 2
+
+*kalkulator specificity: specificity.keegan.st

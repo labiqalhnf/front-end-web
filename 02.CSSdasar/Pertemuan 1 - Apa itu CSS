@@ -1,0 +1,33 @@
+Pertemuan 1 - Apa itu CSS?
+
+CSS (Cascading Style Sheet)
+definisi : mekanisme sederhana yg mengatur gaya atau style (cth: warna, ukuran, posisi) dari sebuah halaman web. - sumber: www.w3.org
+
+CSS - aturan yang digunakan untuk menampilkan elemen / tag HTML
+	- Dibuat terpisah dengan HTML
+	- Bertujuan untuk memisahkan konten dan style
+	- 1 CSS dapat digunakan utk bnyak halaman HTML
+	- 1 Halaman HTML dapat terlihat berbeda jika menggunakan CSS yg berbeda pula
+		www.csszengarden.com
+
+Sebelum ada CSS:
+untuk membuat "Hello World!" dengan style
+<font-size="+6" color="lightblue" face="arial">
+	<center>
+		<h1>hello world!</h1>
+	</center>
+</font>
+
+*jangan lakukan seperti di atas tapi gunakan css
+
+Dengan CSS:
+pada HTML (konten)
+<h1>Hello World!</h1>
+
+pada css (presentasi / style)
+h1{
+	font-size:"+6;"
+	font-family:"arial;"
+	color:"lightblue;"
+	text-align:"center;"
+}
